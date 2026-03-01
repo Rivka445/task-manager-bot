@@ -19,13 +19,10 @@ class Message(BaseModel):
 @app.post("/chat")
 async def chat(msg: Message):
     """נקודת קצה לשליחת הודעות ל-agent"""
-    print(f"\n[DEBUG] קיבלתי הודעה: {msg.message}")
     try:
         response = agent(msg.message)
-        print(f"[DEBUG] תשובה: {response}\n")
         return {"response": response}
     except Exception as e:
-        print(f"[ERROR] שגיאה: {str(e)}\n")
         return {"response": f"שגיאה: {str(e)}"}
 
 
