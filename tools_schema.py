@@ -23,8 +23,7 @@ tools = [
                         "type": "string",
                         "description": "תאריך סיום (YYYY-MM-DD)"
                     }
-                },
-                "additionalProperties": False
+                }
             }
         }
     },
@@ -61,8 +60,7 @@ tools = [
                         "description": "סטטוס המשימה (pending, in_progress, completed)"
                     }
                 },
-                "required": ["title"],
-                "additionalProperties": False
+                "required": ["title"]
             }
         }
     },
@@ -103,8 +101,7 @@ tools = [
                         "description": "סטטוס חדש (pending, in_progress, completed)"
                     }
                 },
-                "required": ["task_id"],
-                "additionalProperties": False
+                "required": ["task_id"]
             }
         }
     },
@@ -121,8 +118,7 @@ tools = [
                         "description": "מזהה המשימה למחיקה"
                     }
                 },
-                "required": ["task_id"],
-                "additionalProperties": False
+                "required": ["task_id"]
             }
         }
     }
